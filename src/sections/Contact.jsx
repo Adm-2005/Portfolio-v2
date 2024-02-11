@@ -76,7 +76,7 @@ export default function Contact(props) {
           </form>
           <div className="my-auto">
             <img
-              src="src/assets/images/contact1.gif"
+              src="/src/assets/images/contact1.gif"
               className="w-fit lg:h-[400px] mx-auto px-6 py-6"
             ></img>
           </div>
