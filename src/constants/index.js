@@ -107,7 +107,7 @@ export const projectLinks = [
   {
     name: "Stutter Ease",
     description:
-      "Stutter Ease is an AI talkbot that provides personalized speech therapy to individuals with stuttering challenges.",
+      "Stutter Ease is a talkbot that aids individuals with stuttering challenges.",
     imgUrl: "assets/images/projects/stutterease.png",
     repoUrl: "https://github.com/Adm-2005/Stutter-Ease",
   },

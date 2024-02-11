@@ -27,7 +27,7 @@ export default function Projects(props) {
         </div>
         <div className="grid py-16 m-auto xl:grid-cols-3 grid-cols-1 gap-8">
           {projectLinks.map((project) => (
-            <div className="w-[330px] h-[250px] md:w-[450px] lg:w-[480px] sm:h-[300px] bg-transparent cursor-pointer group perspective">
+            <div className="w-[280px] sm:w-[380px] md:w-[440px] h-[250px] sm:h-[300px] bg-transparent cursor-pointer group perspective">
               <div className="relative  preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
                 <div className="absolute backface-hidden border-2 border-violet-600 rounded-md w-full h-full">
                   <img
