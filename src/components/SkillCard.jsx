@@ -11,7 +11,7 @@ export default function SkillCard({ darkMode, category, icons }) {
         {category}
       </h1>
 
-      <div className="flex gap-4">
+      <div className="grid grid-cols-3 gap-4">
         {icons.map((icon) => (
           <img
             src={icon.link}

@@ -32,7 +32,11 @@ export default function Contact(props) {
               : "flex flex-col-reverse lg:flex-row-reverse my-16 mx-auto  w-full rounded-md lg:w-3/5 h-fit shadow-2xl"
           }
         >
-          <form className="flex flex-col px-6 py-6 mx-auto my-auto gap-6 rounded-md">
+          <form
+            method="POST"
+            action="https://formspree.io/f/mbjnorzz"
+            className="flex flex-col px-6 py-6 mx-auto my-auto gap-6 rounded-md"
+          >
             <label
               htmlFor="Name"
               className="text-xl text-violet-600 font-semibold font-poppins flex-col flex"
@@ -76,7 +80,7 @@ export default function Contact(props) {
           </form>
           <div className="my-auto">
             <img
-              src="/src/assets/images/contact1.gif"
+              src="assets/images/contact1.gif"
               className="w-fit lg:h-[400px] mx-auto px-6 py-6"
             ></img>
           </div>

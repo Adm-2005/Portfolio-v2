@@ -58,7 +58,7 @@ export default function Hero(props) {
           </div>
         </div>
         <div className="bg-gradient-to-b from-violet-500 rounded-full mx-auto w-30 h-30 sm:w-3/5 sm:h-3/5 xl:w-1/5 my-5 shadow-2xl">
-          <img src="/src/assets/images/avatar.png"></img>
+          <img src="assets/images/avatar.png"></img>
         </div>
         <a
           href="https://drive.google.com/file/d/1GKF1iLAWcKIm1k6eXGMD88zoFh-8qsCM/view?pli=1"
