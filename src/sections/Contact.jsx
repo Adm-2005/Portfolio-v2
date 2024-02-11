@@ -35,7 +35,7 @@ export default function Contact(props) {
           <form
             method="POST"
             action="https://formspree.io/f/mbjnorzz"
-            className="flex flex-col px-6 py-6 mx-auto my-auto gap-6 rounded-md"
+            className="flex flex-col w-full px-6 py-6 mx-auto my-auto gap-6 rounded-md"
           >
             <label
               htmlFor="Name"
