@@ -90,7 +90,7 @@ export const skills = [
         name: "PostgreSQL",
         link: "assets/icons/databases/PostgreSQL.svg",
       },
-      { name: "SQLite", link: "/src/assets/icons/databases/SQLite.svg" },
+      { name: "SQLite", link: "assets/icons/databases/SQLite.svg" },
     ],
   },
 
