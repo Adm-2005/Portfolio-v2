@@ -10,8 +10,18 @@ export default function Certifications(props) {
     >
       <div className="flex flex-1 flex-col min-h-screen w-full">
         <div className="mx-auto flex">
-          <PiCertificateFill size="35px" color="#7c3aed" className="mr-2" />
-          <h1 className="text-3xl lg:text-5xl text-violet-600 font-bold font-poppins">
+          <PiCertificateFill
+            size="35px"
+            color={props.darkMode ? "white" : "#7c3aed"}
+            className=" mr-2 lg:mt-2"
+          />
+          <h1
+            className={
+              props.darkMode
+                ? "text-3xl  lg:text-5xl text-white font-bold font-poppins"
+                : "text-3xl  lg:text-5xl text-violet-600 font-bold font-poppins"
+            }
+          >
             Certifications
           </h1>
         </div>

@@ -1,8 +1,8 @@
 {
-  "name": "react-javascript",
+  "name": "Akshat Mishra's Portfolio v2",
   "version": "1.0.0",
   "type": "module",
-  "description": "React TypeScript on Replit, using Vite bundler",
+  "description": "A portfolio website built by Akshat Mishra using React JS and Tailwind.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
