@@ -122,7 +122,7 @@ export const projectLinks = [
     name: "Akshat Scribes",
     description:
       "Akshat Scribes is a blog website that hosts the blogs written by Akshat Mishra.",
-    imgUrl: "assets/images/projects/akshatscribes.png",
+    imgUrl: "assets/images/projects/akshatscribes-rev.png",
     repoUrl: "https://github.com/Adm-2005/Akshat-Scribes",
   },
   {
