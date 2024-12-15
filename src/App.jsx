@@ -1,4 +1,4 @@
-import "./App.css";
+import { useState } from "react";
 import Nav from "./components/Nav.jsx";
 import Hero from "./sections/Hero.jsx";
 import Education from "./sections/Education.jsx";
@@ -8,7 +8,7 @@ import Certifications from "./sections/Certifications.jsx";
 import Projects from "./sections/Projects.jsx";
 import Contact from "./sections/Contact.jsx";
 import Footer from "./components/Footer.jsx";
-import { useState, useEffect, useRef } from "react";
+import "./App.css";
 
 export default function App() {
   const [darkMode, setdarkMode] = useState(false);
@@ -25,7 +25,6 @@ export default function App() {
         <Hero
           darkMode={darkMode}
           toggleDarkMode={toggleDarkMode}
-          className="xl:padding-l wide:padding-r padding-b"
         />
       </section>
 
@@ -33,7 +32,6 @@ export default function App() {
         <Education
           darkMode={darkMode}
           toggleDarkMode={toggleDarkMode}
-          className="xl:padding-l wide:padding-r padding-b"
         />
       </section>
 
@@ -41,7 +39,6 @@ export default function App() {
         <Experience
           darkMode={darkMode}
           toggleDarkMode={toggleDarkMode}
-          className="xl:padding-l wide:padding-r padding-b"
         />
       </section>
 
@@ -49,33 +46,29 @@ export default function App() {
         <Skills
           darkMode={darkMode}
           toggleDarkMode={toggleDarkMode}
-          className="xl:padding-l wide:padding-r padding-b"
         />
       </section>
-
-      {/* <section>
-        <Certifications
-          darkMode={darkMode}
-          toggleDarkMode={toggleDarkMode}
-          className="xl:padding-l wide:padding-r padding-b"
-        />
-      </section> */}
 
       <section>
         <Projects
           darkMode={darkMode}
           toggleDarkMode={toggleDarkMode}
-          className="xl:padding-l wide:padding-r padding-b"
         />
       </section>
 
       <section>
+        <Certifications
+          darkMode={darkMode}
+          toggleDarkMode={toggleDarkMode}
+        />
+      </section>
+
+      {/* <section>
         <Contact
           darkMode={darkMode}
           toggleDarkMode={toggleDarkMode}
-          className="xl:padding-l wide:padding-r padding-b"
         />
-      </section>
+      </section> */}
 
       <Footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     </main>

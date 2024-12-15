@@ -9,11 +9,7 @@ export default function Card({
 }) {
   return (
     <div
-      className={
-        darkMode
-          ? "flex flex-1 flex-col px-auto w-full xl:w-4/5 h-500px mx-auto rounded-md pb-4 bg-[#202020]"
-          : "flex flex-1 flex-col px-auto w-full xl:w-4/5 h-500px mx-auto rounded-md pb-4 shadow-2xl"
-      }
+      className={`flex flex-1 flex-col px-auto w-full h-500px mx-auto rounded-md pb-4 ${darkMode ? 'bg-[#202020]' : 'bg-white shadow-xl'}`}
     >
       <img src={imgURL} className="h-[280px]  rounded-t-md "></img>
       <h1 className="px-4 mt-4 text-xl font-bold">{degree}</h1>

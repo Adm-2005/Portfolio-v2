@@ -1,43 +1,31 @@
-import { workDetails } from "../constants/index";
+import { workDetails } from "../constants/utils";
 
-export default function Timeline(props) {
+export default function Timeline({darkMode}) {
   return (
     <div>
-      {workDetails.map((work) => (
+      {workDetails.map((work, index) => (
         <div
-          id="timeline"
-          className="border-l-4 border-violet-600 mx-auto w-full py-16 space-y-14"
+          key={index}
+          className="border-l-4 border-violet-700 mx-auto w-full py-16 space-y-14"
         >
           <div className="relative">
             <div
               id="dot"
-              className="absolute top-5 -left-3.5 bg-violet-600 rounded-full h-6 w-6 border-4"
+              className="absolute top-5 -left-3.5 bg-violet-700 rounded-full h-6 w-6 border-4"
             ></div>
             <div className="pl-10">
               <h3
-                className={
-                  props.darkMode
-                    ? "font-bold font-inter text-2xl lg:text-3xl text-white"
-                    : "font-bold font-inter text-2xl lg:text-3xl text-gray-800"
-                }
+                className={`font-bold font-inter text-2xl lg:text-3xl ${darkMode ? 'text-white': 'text-gray-800'}`}
               >
                 {work.position}
               </h3>
               <h2
-                className={
-                  props.darkMode
-                    ? "font-semibold font-inter text-xl text-white"
-                    : "font-semibold font-inter text-xl text-gray-800"
-                }
+                className={`font-semibold font-inter text-xl ${darkMode ? 'text-white' : 'text-gray-800'}`}
               >
                 {work.company}
               </h2>
               <p
-                className={
-                  props.darkMode
-                    ? "font-medium font-inter text-lg text-white"
-                    : "font-medium font-inter text-lg text-gray-800"
-                }
+                className={`font-medium font-inter text-lg ${darkMode ? 'text-violet-200' : 'text-gray-600'}`}
               >
                 {work.description}
               </p>

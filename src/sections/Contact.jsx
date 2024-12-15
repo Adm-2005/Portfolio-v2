@@ -1,36 +1,26 @@
 import { AiFillMessage } from "react-icons/ai";
 
-export default function Contact(props) {
+export default function Contact({darkMode}) {
   return (
     <section
       id="contact"
-      className={
-        props.darkMode ? "bg-[#121212] px-8 sm:px-16" : "bg-white px-8 sm:px-16"
-      }
+      className={`${darkMode ? 'bg-[#121212]' : 'bg-white'} px-4 lg:px-[5vw] w-full lg:w-[90vw] mx-auto`}
     >
       <div className="flex flex-1 flex-col w-full">
         <div className="mx-auto flex">
           <AiFillMessage
             size="35px"
-            color={props.darkMode ? "white" : "#7c3aed"}
+            color={darkMode ? "white" : "#7c3aed"}
             className=" mr-2 lg:mt-2"
           />
           <h1
-            className={
-              props.darkMode
-                ? "text-3xl  lg:text-5xl text-white font-bold font-poppins"
-                : "text-3xl  lg:text-5xl text-violet-600 font-bold font-poppins"
-            }
+            className={`text-3xl  lg:text-5xl ${darkMode ? 'text-white' : 'text-violet-700'} font-bold font-poppins`}
           >
             Get in Touch
           </h1>
         </div>
         <div
-          className={
-            props.darkMode
-              ? "flex flex-col-reverse lg:flex-row-reverse my-16 mx-auto  w-full rounded-md lg:w-3/5 h-fit bg-[#202020]"
-              : "flex flex-col-reverse lg:flex-row-reverse my-16 mx-auto  w-full rounded-md lg:w-3/5 h-fit shadow-2xl"
-          }
+          className={`flex flex-col-reverse lg:flex-row-reverse my-16 mx-auto border w-full rounded-md h-fit ${darkMode ? 'bg-[#202020]' : 'bg-white shadow-2xl'}`}
         >
           <form
             method="POST"
@@ -39,31 +29,31 @@ export default function Contact(props) {
           >
             <label
               htmlFor="Name"
-              className="text-xl text-violet-600 font-semibold font-poppins flex-col flex"
+              className="text-xl text-violet-700 font-semibold font-poppins flex-col flex"
             >
               Name
               <input
                 id="Name"
                 type="text"
                 placeholder="Enter your name"
-                className="text-black font-medium border border-violet-600 invalid:border-red-500 focus:outline-none focus:ring px-2 py-2  rounded-md"
+                className="text-black font-medium border border-violet-700 invalid:border-red-500 focus:outline-none focus:ring px-2 py-2  rounded-md"
               ></input>
             </label>
             <label
               htmlFor="Email"
-              className=" text-xl text-violet-600 font-semibold font-poppins flex-col flex"
+              className=" text-xl text-violet-700 font-semibold font-poppins flex-col flex"
             >
               Email
               <input
                 id="Email"
                 type="email"
                 placeholder="Enter your email address"
-                className="text-black font-medium border border-violet-600 invalid:border-red-500 focus:outline-none focus:ring px-2  py-2  rounded-md"
+                className="text-black font-medium border border-violet-700 invalid:border-red-500 focus:outline-none focus:ring px-2  py-2  rounded-md"
               ></input>
             </label>
             <label
               htmlFor="Message"
-              className=" text-xl text-violet-600 font-semibold font-poppins flex-col flex"
+              className=" text-xl text-violet-700 font-semibold font-poppins flex-col flex"
             >
               Message
               <textarea
@@ -71,10 +61,10 @@ export default function Contact(props) {
                 type="textarea"
                 rows="5"
                 placeholder="Enter your message"
-                className="text-black font-medium border border-violet-600 invalid:border-red-500 focus:outline-none focus:ring px-2 py-2  rounded-md"
+                className="text-black font-medium border border-violet-700 invalid:border-red-500 focus:outline-none focus:ring px-2 py-2  rounded-md"
               ></textarea>
             </label>
-            <button className="bg-gradient-to-r from-violet-600 to-violet-200  mx-auto my-4 text-white font-bold font-inter px-4  py-3 rounded-lg ">
+            <button className="bg-gradient-to-r from-violet-700 to-violet-300  mx-auto my-4 text-white font-bold font-inter px-4 lg:px-8 py-3 rounded-lg ">
               Submit
             </button>
           </form>
